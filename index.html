@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visit Indonesia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+      <nav>
+        <div class="layar-dalam">
+            <div class="logo"><i class="fab fa-pagelines"></i> VisitIndonesia</div>
+            <div class="menu">
+                <a href="#" class="tombol-menu">
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <div class="layar-penuh">
+    <header id="home">
+      <div class="overlay"></div>
+      <video autoplay muted loop>
+        <source src="Cinematic Travel Video.mp4" type="video/mp4" />
+      </video>
+      <div class="intro">
+        <h3>Visit Indonesia</h3>
+        <p>Indonesia terbuat dari rindu, pulang dan angkringan</p>
+        <p><a href="" class="tombol">MORE INFO</a></p>
+        <div class="time-date">
+          <p id="date-time"></p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="aboutus">
+        <div class="layar-dalam">
+          <div class="aboutus-container">
+            <img src="https://cdn.medcom.id/dynamic/content/2023/11/29/1635453/IyauvRp60s.jpeg?w=500" alt="About Us Image" class="aboutus-image" />
+            <div class="aboutus-text">
+              <h3 class="ringkasan">
+                SANDIAGA UNO
+              </h3>
+              <p>
+                “Hutan dan pegunungan selama ini menjadi magnet utama, tapi, wisata bahari, wisata minat khusus, megalitik, juga sangat menjanjikan, dan semua aspeknya adalah keberlanjutan, dengan pendekatan konservasi terutama untuk wisata alam,” </p>
+            </div>
+        </div>
+      </section>
+      <section class="card">
+      </div>
+      <h2>Explore Indonesia</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="https://cdn.medcom.id/dynamic/content/2023/11/29/1635453/IyauvRp60s.jpeg?w=500" alt="Card Image 1" class="card-image">
+          <div class="card-description">
+            <p>Experience stunning natural wonders in Indonesia.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://cdn.medcom.id/dynamic/content/2023/11/29/1635453/IyauvRp60s.jpeg?w=500" alt="Card Image 2" class="card-image">
+          <div class="card-description">
+            <p>Discover rich cultural heritage in Indonesia.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://cdn.medcom.id/dynamic/content/2023/11/29/1635453/IyauvRp60s.jpeg?w=500" alt="Card Image 3" class="card-image">
+          <div class="card-description">
+            <p>Savor unforgettable culinary experiences in Indonesia.</p>
+          </div>
+        </div>
+      </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    function updateTime() {
+      var now = new Date();
+      var dateTimeElement = document.getElementById("date-time");
+      dateTimeElement.textContent = now.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }) + ' | ' + now.toLocaleDateString();
+    }
+
+    updateTime(); // Initial call to display time immediately
+    setInterval(updateTime, 1000); // Update time every second
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="javascript.js"></script>
+</body>
+</html>
