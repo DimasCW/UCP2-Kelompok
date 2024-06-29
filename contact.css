@@ -1,0 +1,268 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .logo {
+    color: green;
+    font-size: 24px;
+    font-family: 'Pacifico', cursive;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .layar-dalam {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .layar-penuh {
+    width: 100%;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  nav .layar-dalam {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  
+  nav .logo img {
+    height: 40px;
+  }
+  
+  nav .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav .menu ul {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav .menu ul li a {
+    padding: 10px 20px;
+    display: block;
+  }
+  
+  nav .menu .tombol-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  nav .menu .tombol-menu span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin-bottom: 4px;
+    border-radius: 3px;
+  }
+  
+  /* Header Styles */
+  .contact-header {
+    position: relative;
+    height: 100vh;
+    color: #fff;
+    background-image: url('/BGbromo.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .contact-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  .contact-header .intro {
+    position: relative;
+    text-align: center;
+  }
+  
+  .contact-header .intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-header .intro p {
+    font-size: 1.2em;
+  }
+  
+  .contact-header form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact-header form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-header form .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-header form .form-group input,
+  .contact-header form .form-group textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .contact-header form .form-group textarea {
+    height: 100px;
+  }
+  
+  .contact-header form button {
+    padding: 10px;
+    background: green;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  /* Main Styles */
+  main {
+    padding: 60px 20px;
+  }
+  
+  main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  main p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+ /* Footer Styles */
+footer {
+    background: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+  }
+  
+  footer .layar-dalam {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer .footer-logo {
+    flex: 1 1 100%;
+  }
+  
+  footer .footer-links,
+  footer .footer-contact,
+  footer .footer-sosmed {
+    flex: 1 1 30%;
+    padding: 10px;
+  }
+  
+  footer .footer-sosmed a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 1.5em;
+  }
+  
+  @media (max-width: 768px) {
+    footer .footer-links,
+    footer .footer-contact,
+    footer .footer-sosmed {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+  
+    nav .menu ul {
+      flex-direction: column;
+      display: none;
+      background: #fff;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 200px;
+      text-decoration: underline
+    }
+  
+    nav .menu ul li a {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      text-decoration: underline;
+    }
+  
+    nav .menu .tombol-menu {
+      display: flex;
+    }
+  }
+  
+  .show-menu {
+    display: flex !important;
+  }
+  
+
+/* Contact Info and Map Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .contact-details {
+    flex: 1;
+  }
+  
+  .contact-map {
+    flex: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .flex-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-map iframe {
+      width: 100%;
+      height: 300px;
+    }
+  }

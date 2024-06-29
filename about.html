@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Visit Indonesia</title>
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="layar-dalam">
+            <div class="logo"><i class="fab fa-pagelines"></i> VisitIndonesia</div>
+            <div class="menu">
+                <a href="#" class="tombol-menu">
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="about-header">
+        <div class="overlay"></div>
+        <div class="intro">
+            <h1>About Us</h1>
+        </div>
+    </header>
+    <section class="section-one">
+        <div class="layar-dalam grid-container">
+            <div class="product">
+                <img src="/PuraUlunDanu.jpg" alt="Product 1" class="product-img" height="215" onclick="openModal('Product 1')">
+                <h3 class="product-title" onclick="openModal('Product 1')">Pura Ulun Danu Bratan</h3>
+            </div>
+            <div class="product">
+                <img src="/MtBromo.jpg" alt="Product 2" class="product-img" height="215" onclick="openModal('Product 2')">
+                <h3 class="product-title" onclick="openModal('Product 2')">Mount Bromo</h3>
+            </div>
+            <div class="product">
+                <img src="/Bali.jpg" alt="Product 3" class="product-img" height="215" onclick="openModal('Product 3')">
+                <h3 class="product-title" onclick="openModal('Product 3')">Bali</h3>
+            </div>
+            <div class="product">
+                <img src="/SamarindaIslamicCenter.jpg" alt="Product 4" class="product-img" height="215" onclick="openModal('Product 4')">
+                <h3 class="product-title" onclick="openModal('Product 4')">Borneo Samarinda</h3>
+            </div>
+            <div class="product">
+                <img src="/Borobudur.jpg" alt="Product 5" class="product-img" onclick="openModal('Product 5')">
+                <h3 class="product-title" onclick="openModal('Product 5')">Borobudur Temple</h3>
+            </div>
+            <div class="product">
+                <img src="/Jakarta.jpg" alt="Product 6" class="product-img" height="215" onclick="openModal('Product 6')">
+                <h3 class="product-title" onclick="openModal('Product 6')">Jakarta</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-two">
+        <div class="layar-dalam">
+            <h2>Our Mission</h2>
+            <p style="text-align: justify;">Dibangun oleh tim yang bersemangat dalam menjelajahi keindahan Indonesia, Traveller Indonesia bertujuan untuk menjadi sumber daya utama bagi semua orang yang ingin menjelajahi kekayaan budaya, alam, dan petualangan yang ditawarkan oleh negeri ini. Kami percaya bahwa setiap perjalanan adalah kesempatan untuk belajar, bertumbuh, dan memperkaya pengalaman hidup. Dengan informasi yang akurat dan terpercaya, kami berharap dapat menginspirasi dan membantu Anda merencanakan perjalanan yang tak terlupakan di Indonesia.</p>
+            
+            <div class="mission-grid">
+                <div class="mission-item mission-item-1">
+                    <h4><i class="far fa-envelope"></i> Contact Us</h4>
+                    <p>For inquiries and support, please feel free to contact us via email.</p>
+                </div>
+                <div class="mission-item mission-item-2">
+                    <h4><i class="fab fa-whatsapp"></i> WhatsApp Support</h4>
+                    <p>Reach out to us on WhatsApp for immediate assistance and queries.</p>
+                </div>
+                <div class="mission-item mission-item-3">
+                    <h4><i class="fab fa-facebook-f"></i> Facebook Community</h4>
+                    <p>Join our vibrant Facebook community to share experiences and tips.</p>
+                </div>
+                <div class="mission-item mission-item-4">
+                    <h4><i class="fab fa-twitter"></i> Twitter Updates</h4>
+                    <p>Follow us on Twitter for the latest news, updates, and travel tips.</p>
+                </div>
+                <div class="mission-image">
+                    <img src="/Jakarta.jpg" alt="Mission Image">
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <footer>
+        <div class="layar-dalam">
+            <div class="footer-logo">
+                <div class="logo"><i class="fab fa-pagelines"></i> VisitIndonesia</div>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <a href="mailto:canvaperpustakaanumy@gmail.com">canvaperpustakaanumy@gmail.com</a>
+                <a href="https://wa.me/0274387656" target="_blank">+62 274 387656 (WhatsApp)</a>
+            </div>
+            <div class="footer-sosmed">
+                <a href="https://www.facebook.com/mpaumy" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/KOMAPUMY?mx=2" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/mapala_umy_since_1983/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Modal Image">
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <script>
+                    // Fungsi untuk membuka modal
+            function openModal(productName) {
+                var modal = document.getElementById("myModal");
+                var modalImg = document.getElementById("modalImage");
+                var modalText = document.getElementById("modalText");
+
+                // Mengisi konten modal berdasarkan nama produk
+                switch (productName) {
+                    case 'Product 1':
+                        modalImg.src = "/PuraUlunDanu.jpg";
+                        modalText.textContent = "Pura Ulun Danu Bratan is a major Shivaite and water temple in Bali, Indonesia. The temple complex is located on the shores of Lake Bratan in the mountains near Bedugul.";
+                        break;
+                    case 'Product 2':
+                        modalImg.src = "/MtBromo.jpg";
+                        modalText.textContent = "Mount Bromo is an active volcano and part of the Tengger massif, in East Java, Indonesia. At 2,329 meters (7,641 ft) it is not the highest peak of the massif, but it is the most famous.";
+                        break;
+                    case 'Product 3':
+                        modalImg.src = "/Bali.jpg";
+                        modalText.textContent = "Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches, and coral reefs. The island is home to religious sites such as cliffside Uluwatu Temple.";
+                        break;
+                    case 'Product 4':
+                        modalImg.src = "/SamarindaIslamicCenter.jpg";
+                        modalText.textContent = "Borneo Samarinda Islamic Center is a mosque located in Samarinda, East Kalimantan, Indonesia. It is the largest mosque in the city and a prominent landmark.";
+                        break;
+                    case 'Product 5':
+                        modalImg.src = "/Borobudur.jpg";
+                        modalText.textContent = "Borobudur is a 9th-century Mahayana Buddhist temple in Magelang Regency, not far from the town of Muntilan, in Central Java, Indonesia. It is the world's largest Buddhist temple.";
+                        break;
+                    case 'Product 6':
+                        modalImg.src = "/Jakarta.jpg";
+                        modalText.textContent = "Jakarta is the capital and largest city of Indonesia. Located on the northwest coast of Java, it is the center of economics, culture, and politics of Indonesia.";
+                        break;
+                    default:
+                        modalImg.src = "";
+                        modalText.textContent = "";
+                }
+
+                modal.style.display = "block";
+
+                // Fungsi untuk menutup modal ketika tombol close atau di luar konten modal diklik
+                var span = document.getElementsByClassName("close")[0];
+                span.onclick = function() {
+                    modal.style.display = "none";
+                }
+
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Visit Indonesia</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <nav>
+        <div class="layar-dalam">
+            <div class="logo"><i class="fab fa-pagelines"></i> VisitIndonesia</div>
+            <div class="menu">
+                <a href="#" class="tombol-menu">
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li> 
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="home" class="contact-header">
+        <div class="overlay"></div>
+        <div class="intro">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you!</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nama">Name</label><br>
+                    <input type="text" placeholder="Enter your name" id="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label><br>
+                    <input type="email" placeholder="Enter your email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label><br>
+                    <textarea id="message" placeholder="Enter your message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section id="contact-info">
+            <div class="layar-dalam flex-container">
+                <div class="contact-details">
+                    <h2>Contact Information</h2>
+                    <p>You can also reach us through the following methods:</p>
+                    <p><a href="https://wa.me/0274 387656" target="_blank">Phone: +62 274 387656 (WhatsApp)</a></p>
+                    <p><a href="mailto:canvaperpustakaanumy@gmail.com">Email: canvaperpustakaanumy@gmail.com</a></p>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.8366171813764!2d110.31670417795918!3d-7.8071145721356565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af8050b4348e7%3A0xf0fa875bc23ed4ee!2sMAPALA%20UMY!5e0!3m2!1sid!2sid!4v1719590257378!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="layar-dalam">
+            <div class="footer-logo">
+                <div class="logo"><i class="fab fa-pagelines"></i> VisitIndonesia</div>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="#aboutus">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <a href="mailto:canvaperpustakaanumy@gmail.com">canvaperpustakaanumy@gmail.com</a>
+                <a href="https://wa.me/0274387656" target="_blank">+62 274 387656 (WhatsApp)</a>
+            </div>
+            <div class="footer-sosmed">
+                <a href="https://www.facebook.com/mpaumy" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/KOMAPUMY?mx=2" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/mapala_umy_since_1983/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var name = document.getElementById("nama").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            
+            Swal.fire({
+                title: 'Contact Form Submitted',
+                // html: <p>Name: ${name}</p><p>Email: ${email}</p><p>Message: ${message}</p>,
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        });
+    </script>
+</body>
+</html>
